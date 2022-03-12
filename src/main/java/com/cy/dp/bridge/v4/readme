@@ -1,0 +1,14 @@
+使用桥接模式：
+分离抽象与具体实现，让他们可以独自发展
+Gift -> WarmGift ColdGift WildGift
+GiftImpl -> Flower Ring Car
+
+桥接模式：
+把抽象这部分的继承树跟实现部分的继承树的发展，分离开来，但是在抽象这部分里面我们聚合一个具体的实现。
+每一个Gift里面都有一个具体的实现GiftImpl。Gift是一个概念，这个概念也在不断发展，WarmGift、ColdGift
+只不过任何一个Gift new出来的时候都需要聚合一个Gift的实现。
+两个维度在同时发展，为了避免类爆炸的问题，采用Bridge。
+
+
+
+
